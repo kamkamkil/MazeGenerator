@@ -80,7 +80,7 @@ public:
         {
             for (auto var1 : var)
             {
-                std::cout << "( " << a << ", " << b << " )   [" << var1.up << "  " << var1.left << "  " << var1.down << "  " << var1.right  << "]"<< std::endl;
+                std::cout << "( " << a << ", " << b << " )   [" << var1.up << "  " << var1.left << "  " << var1.down << "  " << var1.right << "]" << std::endl;
                 b++;
             }
             a++;
@@ -120,13 +120,28 @@ MyTable mazeGenerator(int hight, int width)
             set.insert(pair);
             if (c_node.first != pair.first)
                 if (c_node.first - 1 == pair.first)
+                {
                     maze(c_node).up = true;
+                    maze(pair).down = true;
+                }
                 else
+                {
                     maze(c_node).down = true;
-            else if (c_node.second - 1 == pair.first)
-                maze(c_node).left = true;
+                    maze(pair).up = true;
+                }
             else
-                maze(c_node).right = true;
+            {
+                if (c_node.second - 1 == pair.second)
+                {
+                    maze(c_node).left = true;
+                    maze(pair).right = true;
+                }
+                else
+                {
+                    maze(c_node).right = true;
+                    maze(pair).left = true;
+                }
+            }
 
             stack.push(pair);
         }
