@@ -72,6 +72,21 @@ public:
     MyTable(int hight, int width) : data(hight, std::vector<Node>(width, Node())){};
     Node &operator()(int y, int x) { return data[y][x]; }
     Node &operator()(std::pair<int, int> p) { return data[p.first][p.second]; }
+    void display()
+    {
+        int a = 0;
+        int b = 0;
+        for (auto var : data)
+        {
+            for (auto var1 : var)
+            {
+                std::cout << "( " << a << ", " << b << " )   [" << var1.up << "  " << var1.left << "  " << var1.down << "  " << var1.right  << "]"<< std::endl;
+                b++;
+            }
+            a++;
+            b = 0;
+        }
+    }
 };
 
 MyTable mazeGenerator(int hight, int width)
@@ -81,8 +96,8 @@ MyTable mazeGenerator(int hight, int width)
     std::unordered_set<std::pair<int, int>, pair_hash> set;
     std::random_device r;
     std::default_random_engine e1(r());
-    std::uniform_int_distribution<int> uniform_dist_hight(0, hight);
-    std::uniform_int_distribution<int> uniform_dist_width(0, width);
+    std::uniform_int_distribution<int> uniform_dist_hight(0, hight - 1);
+    std::uniform_int_distribution<int> uniform_dist_width(0, width - 1);
     random_selector<> selector;
     stack.push({uniform_dist_hight(e1), uniform_dist_width(e1)});
     set.insert(stack.top());
@@ -93,11 +108,11 @@ MyTable mazeGenerator(int hight, int width)
         std::vector<std::pair<int, int>> v; //@TODO zmiana nazwy
         if (c_node.first > 0 && set.find({c_node.first - 1, c_node.second}) == set.end())
             v.push_back({c_node.first - 1, c_node.second});
-        if (c_node.first < hight && set.find({c_node.first + 1, c_node.second}) == set.end())
+        if (c_node.first < hight - 1 && set.find({c_node.first + 1, c_node.second}) == set.end())
             v.push_back({c_node.first + 1, c_node.second});
         if (c_node.second > 0 && set.find({c_node.first, c_node.second - 1}) == set.end())
             v.push_back({c_node.first, c_node.second - 1});
-        if (c_node.second < width && set.find({c_node.first, c_node.second + 1}) == set.end())
+        if (c_node.second < width - 1 && set.find({c_node.first, c_node.second + 1}) == set.end())
             v.push_back({c_node.first, c_node.second + 1});
         if (!v.empty())
         {
@@ -114,11 +129,11 @@ MyTable mazeGenerator(int hight, int width)
                 maze(c_node).right = true;
 
             stack.push(pair);
-        }else
+        }
+        else
         {
             stack.pop();
         }
-        
     }
 
     return maze;
@@ -126,7 +141,7 @@ MyTable mazeGenerator(int hight, int width)
 
 int main(int argc, char const *argv[])
 {
-    mazeGenerator(10, 10);
-
+    auto maze = mazeGenerator(4, 4);
+    maze.display();
     return 0;
 }
