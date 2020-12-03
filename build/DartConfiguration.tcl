@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: C:/Users/kkedr/zadania_s5/Aisd/mazeGenerator
-BuildDirectory: C:/Users/kkedr/zadania_s5/Aisd/mazeGenerator/build
+SourceDirectory: C:/Users/kkedr/zadania_s5/mazeGenerator
+BuildDirectory: C:/Users/kkedr/zadania_s5/mazeGenerator/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "C:/Program Files/CMake/bin/cmake.exe" "C:/Users/kkedr/zadania_s5/Aisd/mazeGenerator"
+ConfigureCommand: "C:/Program Files/CMake/bin/cmake.exe" "C:/Users/kkedr/zadania_s5/mazeGenerator"
 MakeCommand: "C:\Program Files\CMake\bin\cmake.exe" --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
@@ -62,8 +62,8 @@ UpdateOptions:
 UpdateType: git
 
 # Compiler info
-Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.27.29110/bin/Hostx86/x86/cl.exe
-CompilerVersion: 19.27.29112.0
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.28.29333/bin/Hostx86/x86/cl.exe
+CompilerVersion: 19.28.29334.0
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 

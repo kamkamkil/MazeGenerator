@@ -1,6 +1,6 @@
-^C:\USERS\KKEDR\ZADANIA_S5\AISD\MAZEGENERATOR\CMAKELISTS.TXT
+^C:\USERS\KKEDR\ZADANIA_S5\MAZEGENERATOR\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kkedr/zadania_s5/Aisd/mazeGenerator -BC:/Users/kkedr/zadania_s5/Aisd/mazeGenerator/build --check-stamp-file C:/Users/kkedr/zadania_s5/Aisd/mazeGenerator/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kkedr/zadania_s5/mazeGenerator -BC:/Users/kkedr/zadania_s5/mazeGenerator/build --check-stamp-file C:/Users/kkedr/zadania_s5/mazeGenerator/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

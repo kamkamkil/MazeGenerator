@@ -6,43 +6,43 @@ Id flags:
 
 The output was:
 0
-Microsoft (R) Build Engine 16.7.0+b89cb5fde dla platformy .NET Framework
+Microsoft (R) Build Engine 16.8.2+25e4d540b dla platformy .NET Framework
 Copyright (C) Microsoft Corporation. Wszelkie prawa zastrzeżone.
 
-Kompilacja rozpoczęła się 03.12.2020 05:42:27.
-Projekt "C:\Users\kkedr\zadania_s5\Aisd\mazeGenerator\build\CMakeFiles\3.17.1\CompilerIdC\CompilerIdC.vcxproj" w węźle 1 (domyślne elementy docelowe).
+Kompilacja rozpoczęła się 03.12.2020 11:05:30.
+Projekt "C:\Users\kkedr\zadania_s5\mazeGenerator\build\CMakeFiles\3.17.1\CompilerIdC\CompilerIdC.vcxproj" w węźle 1 (domyślne elementy docelowe).
 PrepareForBuild:
   Tworzenie katalogu "Debug\".
   Tworzenie katalogu "Debug\CompilerIdC.tlog\".
 InitializeBuildStatus:
   Trwa tworzenie "Debug\CompilerIdC.tlog\unsuccessfulbuild", ponieważ określono "AlwaysCreate".
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.27.29110\bin\HostX86\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TC /analyze- /FC /errorReport:queue CMakeCCompilerId.c
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.28.29333\bin\HostX86\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TC /analyze- /FC /errorReport:queue CMakeCCompilerId.c
   CMakeCCompilerId.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.27.29110\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
-  CompilerIdC.vcxproj -> C:\Users\kkedr\zadania_s5\Aisd\mazeGenerator\build\CMakeFiles\3.17.1\CompilerIdC\.\CompilerIdC.exe
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.28.29333\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\Users\kkedr\zadania_s5\mazeGenerator\build\CMakeFiles\3.17.1\CompilerIdC\CompilerIdC.exe
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
   :VCEnd
-  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.27.29110\bin\Hostx86\x86\cl.exe
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.28.29333\bin\Hostx86\x86\cl.exe
 FinalizeBuildStatus:
   Usuwanie pliku "Debug\CompilerIdC.tlog\unsuccessfulbuild".
   Modyfikowanie "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
-Kompilowanie projektu "C:\Users\kkedr\zadania_s5\Aisd\mazeGenerator\build\CMakeFiles\3.17.1\CompilerIdC\CompilerIdC.vcxproj" wykonane (domyślne elementy docelowe).
+Kompilowanie projektu "C:\Users\kkedr\zadania_s5\mazeGenerator\build\CMakeFiles\3.17.1\CompilerIdC\CompilerIdC.vcxproj" wykonane (domyślne elementy docelowe).
 
 Kompilacja powiodła się.
     Ostrzeżenia: 0
     Liczba błędów: 0
 
-Czas, który upłynął: 00:00:01.96
+Czas, który upłynął: 00:00:03.24
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
 
-The C compiler identification is MSVC, found in "C:/Users/kkedr/zadania_s5/Aisd/mazeGenerator/build/CMakeFiles/3.17.1/CompilerIdC/CompilerIdC.exe"
+The C compiler identification is MSVC, found in "C:/Users/kkedr/zadania_s5/mazeGenerator/build/CMakeFiles/3.17.1/CompilerIdC/CompilerIdC.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler:  
@@ -51,97 +51,153 @@ Id flags:
 
 The output was:
 0
-Microsoft (R) Build Engine 16.7.0+b89cb5fde dla platformy .NET Framework
+Microsoft (R) Build Engine 16.8.2+25e4d540b dla platformy .NET Framework
 Copyright (C) Microsoft Corporation. Wszelkie prawa zastrzeżone.
 
-Kompilacja rozpoczęła się 03.12.2020 05:42:30.
-Projekt "C:\Users\kkedr\zadania_s5\Aisd\mazeGenerator\build\CMakeFiles\3.17.1\CompilerIdCXX\CompilerIdCXX.vcxproj" w węźle 1 (domyślne elementy docelowe).
+Kompilacja rozpoczęła się 03.12.2020 11:05:35.
+Projekt "C:\Users\kkedr\zadania_s5\mazeGenerator\build\CMakeFiles\3.17.1\CompilerIdCXX\CompilerIdCXX.vcxproj" w węźle 1 (domyślne elementy docelowe).
 PrepareForBuild:
   Tworzenie katalogu "Debug\".
   Tworzenie katalogu "Debug\CompilerIdCXX.tlog\".
 InitializeBuildStatus:
   Trwa tworzenie "Debug\CompilerIdCXX.tlog\unsuccessfulbuild", ponieważ określono "AlwaysCreate".
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.27.29110\bin\HostX86\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:queue CMakeCXXCompilerId.cpp
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.28.29333\bin\HostX86\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:queue CMakeCXXCompilerId.cpp
   CMakeCXXCompilerId.cpp
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.27.29110\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
-  CompilerIdCXX.vcxproj -> C:\Users\kkedr\zadania_s5\Aisd\mazeGenerator\build\CMakeFiles\3.17.1\CompilerIdCXX\.\CompilerIdCXX.exe
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.28.29333\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> C:\Users\kkedr\zadania_s5\mazeGenerator\build\CMakeFiles\3.17.1\CompilerIdCXX\CompilerIdCXX.exe
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
   :VCEnd
-  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.27.29110\bin\Hostx86\x86\cl.exe
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.28.29333\bin\Hostx86\x86\cl.exe
 FinalizeBuildStatus:
   Usuwanie pliku "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
   Modyfikowanie "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
-Kompilowanie projektu "C:\Users\kkedr\zadania_s5\Aisd\mazeGenerator\build\CMakeFiles\3.17.1\CompilerIdCXX\CompilerIdCXX.vcxproj" wykonane (domyślne elementy docelowe).
+Kompilowanie projektu "C:\Users\kkedr\zadania_s5\mazeGenerator\build\CMakeFiles\3.17.1\CompilerIdCXX\CompilerIdCXX.vcxproj" wykonane (domyślne elementy docelowe).
 
 Kompilacja powiodła się.
     Ostrzeżenia: 0
     Liczba błędów: 0
 
-Czas, który upłynął: 00:00:01.39
+Czas, który upłynął: 00:00:02.02
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
 
-The CXX compiler identification is MSVC, found in "C:/Users/kkedr/zadania_s5/Aisd/mazeGenerator/build/CMakeFiles/3.17.1/CompilerIdCXX/CompilerIdCXX.exe"
+The CXX compiler identification is MSVC, found in "C:/Users/kkedr/zadania_s5/mazeGenerator/build/CMakeFiles/3.17.1/CompilerIdCXX/CompilerIdCXX.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: C:/Users/kkedr/zadania_s5/Aisd/mazeGenerator/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/kkedr/zadania_s5/mazeGenerator/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_842fb.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine 16.7.0+b89cb5fde dla platformy .NET Framework
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_4d746.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine 16.8.2+25e4d540b dla platformy .NET Framework
 Copyright (C) Microsoft Corporation. Wszelkie prawa zastrzeżone.
 
-  Microsoft (R) C/C++ Optimizing Compiler Version 19.27.29112 for x86
-  testCCompiler.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.28.29334 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_842fb.dir\Debug\\" /Fd"cmTC_842fb.dir\Debug\vc142.pdb" /Gd /TC /analyze- /errorReport:queue C:\Users\kkedr\zadania_s5\Aisd\mazeGenerator\build\CMakeFiles\CMakeTmp\testCCompiler.c
-  cmTC_842fb.vcxproj -> C:\Users\kkedr\zadania_s5\Aisd\mazeGenerator\build\CMakeFiles\CMakeTmp\Debug\cmTC_842fb.exe
+  testCCompiler.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4d746.dir\Debug\\" /Fd"cmTC_4d746.dir\Debug\vc142.pdb" /Gd /TC /analyze- /errorReport:queue C:\Users\kkedr\zadania_s5\mazeGenerator\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  cmTC_4d746.vcxproj -> C:\Users\kkedr\zadania_s5\mazeGenerator\build\CMakeFiles\CMakeTmp\Debug\cmTC_4d746.exe
 
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/kkedr/zadania_s5/Aisd/mazeGenerator/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/kkedr/zadania_s5/mazeGenerator/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_ef415.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine 16.7.0+b89cb5fde dla platformy .NET Framework
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_3b41e.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine 16.8.2+25e4d540b dla platformy .NET Framework
 Copyright (C) Microsoft Corporation. Wszelkie prawa zastrzeżone.
 
-  Microsoft (R) C/C++ Optimizing Compiler Version 19.27.29112 for x86
-  CMakeCCompilerABI.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.28.29334 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ef415.dir\Debug\\" /Fd"cmTC_ef415.dir\Debug\vc142.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCCompilerABI.c"
-  cmTC_ef415.vcxproj -> C:\Users\kkedr\zadania_s5\Aisd\mazeGenerator\build\CMakeFiles\CMakeTmp\Debug\cmTC_ef415.exe
+  CMakeCCompilerABI.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3b41e.dir\Debug\\" /Fd"cmTC_3b41e.dir\Debug\vc142.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCCompilerABI.c"
+  cmTC_3b41e.vcxproj -> C:\Users\kkedr\zadania_s5\mazeGenerator\build\CMakeFiles\CMakeTmp\Debug\cmTC_3b41e.exe
 
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: C:/Users/kkedr/zadania_s5/Aisd/mazeGenerator/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/kkedr/zadania_s5/mazeGenerator/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_a8a7e.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine 16.7.0+b89cb5fde dla platformy .NET Framework
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_c3063.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine 16.8.2+25e4d540b dla platformy .NET Framework
 Copyright (C) Microsoft Corporation. Wszelkie prawa zastrzeżone.
 
-  Microsoft (R) C/C++ Optimizing Compiler Version 19.27.29112 for x86
-  testCXXCompiler.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.28.29334 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_a8a7e.dir\Debug\\" /Fd"cmTC_a8a7e.dir\Debug\vc142.pdb" /Gd /TP /analyze- /errorReport:queue C:\Users\kkedr\zadania_s5\Aisd\mazeGenerator\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
-  cmTC_a8a7e.vcxproj -> C:\Users\kkedr\zadania_s5\Aisd\mazeGenerator\build\CMakeFiles\CMakeTmp\Debug\cmTC_a8a7e.exe
+  testCXXCompiler.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c3063.dir\Debug\\" /Fd"cmTC_c3063.dir\Debug\vc142.pdb" /Gd /TP /analyze- /errorReport:queue C:\Users\kkedr\zadania_s5\mazeGenerator\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  cmTC_c3063.vcxproj -> C:\Users\kkedr\zadania_s5\mazeGenerator\build\CMakeFiles\CMakeTmp\Debug\cmTC_c3063.exe
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/kkedr/zadania_s5/Aisd/mazeGenerator/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/kkedr/zadania_s5/mazeGenerator/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_a210d.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine 16.7.0+b89cb5fde dla platformy .NET Framework
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_c29a7.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine 16.8.2+25e4d540b dla platformy .NET Framework
 Copyright (C) Microsoft Corporation. Wszelkie prawa zastrzeżone.
 
-  Microsoft (R) C/C++ Optimizing Compiler Version 19.27.29112 for x86
-  CMakeCXXCompilerABI.cpp
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.28.29334 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_a210d.dir\Debug\\" /Fd"cmTC_a210d.dir\Debug\vc142.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXCompilerABI.cpp"
-  cmTC_a210d.vcxproj -> C:\Users\kkedr\zadania_s5\Aisd\mazeGenerator\build\CMakeFiles\CMakeTmp\Debug\cmTC_a210d.exe
+  CMakeCXXCompilerABI.cpp
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c29a7.dir\Debug\\" /Fd"cmTC_c29a7.dir\Debug\vc142.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXCompilerABI.cpp"
+  cmTC_c29a7.vcxproj -> C:\Users\kkedr\zadania_s5\mazeGenerator\build\CMakeFiles\CMakeTmp\Debug\cmTC_c29a7.exe
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: C:/Users/kkedr/zadania_s5/mazeGenerator/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_027a9.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine 16.8.2+25e4d540b dla platformy .NET Framework
+Copyright (C) Microsoft Corporation. Wszelkie prawa zastrzeżone.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.28.29334 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_027a9.dir\Debug\\" /Fd"cmTC_027a9.dir\Debug\vc142.pdb" /Gd /TC /analyze- /errorReport:queue C:\Users\kkedr\zadania_s5\mazeGenerator\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  cmTC_027a9.vcxproj -> C:\Users\kkedr\zadania_s5\mazeGenerator\build\CMakeFiles\CMakeTmp\Debug\cmTC_027a9.exe
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: C:/Users/kkedr/zadania_s5/mazeGenerator/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_6c76c.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine 16.8.2+25e4d540b dla platformy .NET Framework
+Copyright (C) Microsoft Corporation. Wszelkie prawa zastrzeżone.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.28.29334 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6c76c.dir\Debug\\" /Fd"cmTC_6c76c.dir\Debug\vc142.pdb" /Gd /TC /analyze- /errorReport:queue C:\Users\kkedr\zadania_s5\mazeGenerator\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  cmTC_6c76c.vcxproj -> C:\Users\kkedr\zadania_s5\mazeGenerator\build\CMakeFiles\CMakeTmp\Debug\cmTC_6c76c.exe
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: C:/Users/kkedr/zadania_s5/mazeGenerator/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_03f08.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine 16.8.2+25e4d540b dla platformy .NET Framework
+Copyright (C) Microsoft Corporation. Wszelkie prawa zastrzeżone.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.28.29334 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_03f08.dir\Debug\\" /Fd"cmTC_03f08.dir\Debug\vc142.pdb" /Gd /TC /analyze- /errorReport:queue C:\Users\kkedr\zadania_s5\mazeGenerator\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  cmTC_03f08.vcxproj -> C:\Users\kkedr\zadania_s5\mazeGenerator\build\CMakeFiles\CMakeTmp\Debug\cmTC_03f08.exe
+
+
+
+Determining size of void* passed with the following output:
+Change Dir: C:/Users/kkedr/zadania_s5/mazeGenerator/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe cmTC_c2ddf.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine 16.8.2+25e4d540b dla platformy .NET Framework
+Copyright (C) Microsoft Corporation. Wszelkie prawa zastrzeżone.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.28.29334 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  SIZEOF_VOID_PTR.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c2ddf.dir\Debug\\" /Fd"cmTC_c2ddf.dir\Debug\vc142.pdb" /Gd /TC /analyze- /errorReport:queue C:\Users\kkedr\zadania_s5\mazeGenerator\build\CMakeFiles\CheckTypeSize\SIZEOF_VOID_PTR.c
+  cmTC_c2ddf.vcxproj -> C:\Users\kkedr\zadania_s5\mazeGenerator\build\CMakeFiles\CMakeTmp\Debug\cmTC_c2ddf.exe
 
 
 
