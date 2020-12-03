@@ -1,0 +1,10 @@
+^C:\USERS\KKEDR\ZADANIA_S5\AISD\MAZEGENERATOR\BUILD\CMAKEFILES\94EAE87087A8F83F3EB26256CC5C8501\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kkedr/zadania_s5/Aisd/mazeGenerator -BC:/Users/kkedr/zadania_s5/Aisd/mazeGenerator/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/kkedr/zadania_s5/Aisd/mazeGenerator/build/mazeGenerator.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

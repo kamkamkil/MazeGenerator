@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\kkedr\zadania_s5\Aisd\mazeGenerator\build\CMakeFiles\94eae87087a8f83f3eb26256cc5c8501\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{02C30781-9C53-3542-AB48-58909AA8B620}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
