@@ -3,14 +3,11 @@ project(mazeGenerator VERSION 0.1.0)
 
 include(CTest)
 enable_testing()
+
+add_subdirectory(SFML-2.5.1)
+
 add_executable(mazeGenerator mazegenerator.cpp)
-
-
-# add_subdirectory("sfml")
-
-# add_executable(temp temp.cpp)
-
-
+target_link_libraries(mazeGenerator sfml-graphics)
 
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})

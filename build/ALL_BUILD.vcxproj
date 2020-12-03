@@ -173,6 +173,30 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{DA5635FA-8DB0-3C04-B716-92378CDBE86C}</Project>
       <Name>mazeGenerator</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\kkedr\zadania_s5\mazeGenerator\build\SFML-2.5.1\src\SFML\Audio\sfml-audio.vcxproj">
+      <Project>{736D8C6F-FC44-30F9-ADF4-26F1627D8E61}</Project>
+      <Name>sfml-audio</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kkedr\zadania_s5\mazeGenerator\build\SFML-2.5.1\src\SFML\Graphics\sfml-graphics.vcxproj">
+      <Project>{22E7FC9F-2D26-3A8E-A1C6-FB2E7BDBDD45}</Project>
+      <Name>sfml-graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kkedr\zadania_s5\mazeGenerator\build\SFML-2.5.1\src\SFML\Main\sfml-main.vcxproj">
+      <Project>{B9E74B76-C582-3A54-9463-5DC5CC79FA9B}</Project>
+      <Name>sfml-main</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kkedr\zadania_s5\mazeGenerator\build\SFML-2.5.1\src\SFML\Network\sfml-network.vcxproj">
+      <Project>{210F82AF-A91B-36E8-AB12-B0966FE46587}</Project>
+      <Name>sfml-network</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kkedr\zadania_s5\mazeGenerator\build\SFML-2.5.1\src\SFML\System\sfml-system.vcxproj">
+      <Project>{046A7F55-634D-3C5F-9329-42B675BF0BD1}</Project>
+      <Name>sfml-system</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\kkedr\zadania_s5\mazeGenerator\build\SFML-2.5.1\src\SFML\Window\sfml-window.vcxproj">
+      <Project>{C25850D0-E31F-3DBB-ACB4-05C4D3C4C75F}</Project>
+      <Name>sfml-window</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

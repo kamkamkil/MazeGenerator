@@ -260,19 +260,19 @@ CVS_UPDATE_OPTIONS:STRING=-d -A -P
 DART_TESTING_TIMEOUT:STRING=1500
 
 //Path to a file.
-FLAC_INCLUDE_DIR:PATH=C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/headers
+FLAC_INCLUDE_DIR:PATH=C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/headers
 
 //Path to a library.
-FLAC_LIBRARY:FILEPATH=C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/libs-msvc-universal/x86/flac.lib
+FLAC_LIBRARY:FILEPATH=C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/libs-msvc-universal/x86/flac.lib
 
 //Path to a file.
 FREETYPE_INCLUDE_DIR_freetype2:PATH=C:/Users/kkedr/anaconda3/Library/include
 
 //Path to a file.
-FREETYPE_INCLUDE_DIR_ft2build:PATH=C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/headers/freetype2
+FREETYPE_INCLUDE_DIR_ft2build:PATH=C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/headers/freetype2
 
 //Path to a library.
-FREETYPE_LIBRARY:FILEPATH=C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/libs-msvc-universal/x86/freetype.lib
+FREETYPE_LIBRARY:FILEPATH=C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/libs-msvc-universal/x86/freetype.lib
 
 //Path to a program.
 GITCOMMAND:FILEPATH=C:/Program Files/Git/cmd/git.exe
@@ -290,16 +290,16 @@ MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
 MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 
 //Path to a file.
-OGG_INCLUDE_DIR:PATH=C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/headers
+OGG_INCLUDE_DIR:PATH=C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/headers
 
 //Path to a library.
-OGG_LIBRARY:FILEPATH=C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/libs-msvc-universal/x86/ogg.lib
+OGG_LIBRARY:FILEPATH=C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/libs-msvc-universal/x86/ogg.lib
 
 //Path to a file.
-OPENAL_INCLUDE_DIR:PATH=C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/headers/AL
+OPENAL_INCLUDE_DIR:PATH=C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/headers/AL
 
 //Path to a library.
-OPENAL_LIBRARY:FILEPATH=C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/libs-msvc-universal/x86/openal32.lib
+OPENAL_LIBRARY:FILEPATH=C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/libs-msvc-universal/x86/openal32.lib
 
 //OpenGL library for win32
 OPENGL_gl_LIBRARY:STRING=opengl32
@@ -311,7 +311,7 @@ OPENGL_glu_LIBRARY:STRING=glu32
 P4COMMAND:FILEPATH=P4COMMAND-NOTFOUND
 
 //Value Computed by CMake
-SFML_BINARY_DIR:STATIC=C:/Users/kkedr/zadania_s5/mazeGenerator/build/SFML
+SFML_BINARY_DIR:STATIC=C:/Users/kkedr/zadania_s5/mazeGenerator/build/SFML-2.5.1
 
 //TRUE to build SFML's Audio module.
 SFML_BUILD_AUDIO:BOOL=TRUE
@@ -336,9 +336,6 @@ SFML_BUILD_WINDOW:BOOL=TRUE
 // directory
 SFML_DEPENDENCIES_INSTALL_PREFIX:PATH=.
 
-//The directory containing a CMake configuration file for SFML.
-SFML_DIR:PATH=SFML_DIR-NOTFOUND
-
 //True to generate PDB debug symbols, FALSE otherwise. Requires
 // CMake 3.1.
 SFML_GENERATE_PDB:BOOL=TRUE
@@ -355,7 +352,7 @@ SFML_MISC_INSTALL_PREFIX:PATH=.
 SFML_OPENGL_ES:BOOL=0
 
 //Value Computed by CMake
-SFML_SOURCE_DIR:STATIC=C:/Users/kkedr/zadania_s5/mazeGenerator/sfml
+SFML_SOURCE_DIR:STATIC=C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1
 
 //TRUE to statically link to the standard libraries, FALSE to use
 // them as DLLs
@@ -377,16 +374,16 @@ SLURM_SRUN_COMMAND:FILEPATH=SLURM_SRUN_COMMAND-NOTFOUND
 SVNCOMMAND:FILEPATH=SVNCOMMAND-NOTFOUND
 
 //Path to a library.
-VORBISENC_LIBRARY:FILEPATH=C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/libs-msvc-universal/x86/vorbisenc.lib
+VORBISENC_LIBRARY:FILEPATH=C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/libs-msvc-universal/x86/vorbisenc.lib
 
 //Path to a library.
-VORBISFILE_LIBRARY:FILEPATH=C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/libs-msvc-universal/x86/vorbisfile.lib
+VORBISFILE_LIBRARY:FILEPATH=C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/libs-msvc-universal/x86/vorbisfile.lib
 
 //Path to a file.
-VORBIS_INCLUDE_DIR:PATH=C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/headers
+VORBIS_INCLUDE_DIR:PATH=C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/headers
 
 //Path to a library.
-VORBIS_LIBRARY:FILEPATH=C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/libs-msvc-universal/x86/vorbis.lib
+VORBIS_LIBRARY:FILEPATH=C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/libs-msvc-universal/x86/vorbis.lib
 
 //Value Computed by CMake
 mazeGenerator_BINARY_DIR:STATIC=C:/Users/kkedr/zadania_s5/mazeGenerator/build
@@ -496,7 +493,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RC_COMPILER
@@ -571,13 +568,13 @@ CVS_UPDATE_OPTIONS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DART_TESTING_TIMEOUT
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
 //Details about finding FLAC
-FIND_PACKAGE_MESSAGE_DETAILS_FLAC:INTERNAL=[C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/libs-msvc-universal/x86/flac.lib][C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/headers][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_FLAC:INTERNAL=[C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/libs-msvc-universal/x86/flac.lib][C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/headers][v()]
 //Details about finding OpenAL
-FIND_PACKAGE_MESSAGE_DETAILS_OpenAL:INTERNAL=[C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/libs-msvc-universal/x86/openal32.lib][C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/headers/AL][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenAL:INTERNAL=[C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/libs-msvc-universal/x86/openal32.lib][C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/headers/AL][v()]
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[opengl32][c ][v()]
 //Details about finding VORBIS
-FIND_PACKAGE_MESSAGE_DETAILS_VORBIS:INTERNAL=[C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/libs-msvc-universal/x86/vorbisenc.lib;C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/libs-msvc-universal/x86/vorbisfile.lib;C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/libs-msvc-universal/x86/vorbis.lib;C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/libs-msvc-universal/x86/ogg.lib][C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/headers][C:/Users/kkedr/zadania_s5/mazeGenerator/sfml/extlibs/headers][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_VORBIS:INTERNAL=[C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/libs-msvc-universal/x86/vorbisenc.lib;C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/libs-msvc-universal/x86/vorbisfile.lib;C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/libs-msvc-universal/x86/vorbis.lib;C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/libs-msvc-universal/x86/ogg.lib][C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/headers][C:/Users/kkedr/zadania_s5/mazeGenerator/SFML-2.5.1/extlibs/headers][v()]
 //ADVANCED property for variable: FLAC_INCLUDE_DIR
 FLAC_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: FLAC_LIBRARY
