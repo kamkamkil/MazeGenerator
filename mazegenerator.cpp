@@ -43,19 +43,16 @@ private:
 struct pair_hash
 {
     template <class T1, class T2>
-    std::size_t operator () (std::pair<T1, T2> const &pair) const
+    std::size_t operator()(std::pair<T1, T2> const &pair) const
     {
         std::size_t h1 = std::hash<T1>()(pair.first);
         std::size_t h2 = std::hash<T2>()(pair.second);
- 
+
         return h1 ^ h2;
     }
 };
 
-
 ///////////////////////////////////////
-
-
 
 struct Node
 {
@@ -74,13 +71,14 @@ private:
 public:
     MyTable(int hight, int width) : data(hight, std::vector<Node>(width, Node())){};
     Node &operator()(int y, int x) { return data[y][x]; }
+    Node &operator()(std::pair<int, int> p) { return data[p.first][p.second]; }
 };
 
 MyTable mazeGenerator(int hight, int width)
 {
     MyTable maze(hight, width);
     std::stack<std::pair<int, int>> stack;
-    std::unordered_set<std::pair<int, int>,pair_hash> set;
+    std::unordered_set<std::pair<int, int>, pair_hash> set;
     std::random_device r;
     std::default_random_engine e1(r());
     std::uniform_int_distribution<int> uniform_dist_hight(0, hight);
@@ -90,20 +88,37 @@ MyTable mazeGenerator(int hight, int width)
     set.insert(stack.top());
     while (!stack.empty())
     {
+        auto c_node = stack.top();
         //@TODO przenieść to może do innej funkcji czy coś takiego bo nie wygląda to za dobrze w tej pentli
         std::vector<std::pair<int, int>> v; //@TODO zmiana nazwy
-        if (stack.top().first > 0 && set.find({stack.top().first - 1,stack.top().second}) == set.end())
-            v.push_back({stack.top().first - 1,stack.top().second});
-        if (stack.top().first < hight && set.find({stack.top().first + 1,stack.top().second}) == set.end())
-            v.push_back({stack.top().first + 1,stack.top().second});
-        if (stack.top().second > 0  && set.find({stack.top().first,stack.top().second - 1 }) == set.end())
-            v.push_back({stack.top().first,stack.top().second - 1});
-        if (stack.top().second < width  && set.find({stack.top().first,stack.top().second + 1 }) == set.end())
-            v.push_back({stack.top().first,stack.top().second + 1});
-        auto pair = selector(v);
+        if (c_node.first > 0 && set.find({c_node.first - 1, c_node.second}) == set.end())
+            v.push_back({c_node.first - 1, c_node.second});
+        if (c_node.first < hight && set.find({c_node.first + 1, c_node.second}) == set.end())
+            v.push_back({c_node.first + 1, c_node.second});
+        if (c_node.second > 0 && set.find({c_node.first, c_node.second - 1}) == set.end())
+            v.push_back({c_node.first, c_node.second - 1});
+        if (c_node.second < width && set.find({c_node.first, c_node.second + 1}) == set.end())
+            v.push_back({c_node.first, c_node.second + 1});
+        if (!v.empty())
+        {
+            auto pair = selector(v);
+            set.insert(pair);
+            if (c_node.first != pair.first)
+                if (c_node.first - 1 == pair.first)
+                    maze(c_node).up = true;
+                else
+                    maze(c_node).down = true;
+            else if (c_node.second - 1 == pair.first)
+                maze(c_node).left = true;
+            else
+                maze(c_node).right = true;
+
+            stack.push(pair);
+        }else
+        {
+            stack.pop();
+        }
         
-
-
     }
 
     return maze;
