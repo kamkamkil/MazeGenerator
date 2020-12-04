@@ -1,6 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include "mazeGenerator.cpp"
+#include "mazeGenerator.hpp"
 
 void drawMaze(MyTable table)
 {

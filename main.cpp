@@ -1,5 +1,5 @@
-#include "mazeGenerator.cpp"
-#include "drawMaze.cpp"
+#include "mazeGenerator.hpp"
+#include "drawMaze.hpp"
 
 
 int main(int argc, char const *argv[])
