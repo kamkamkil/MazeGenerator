@@ -38,7 +38,7 @@ do kompilacji programu wymagany jest program cmake, niestety nie wiem jak przygo
 
 #### labirynt 10x15
 
-![labirynt 10x15](pictures\10x15.png )
+![labirynt 10x15](https://github.com/kamkamkil/MazeGenerator/blob/master/pictures/10x15.png )
 
 #### labirynt 20x25
 
