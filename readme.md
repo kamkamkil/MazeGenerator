@@ -30,7 +30,7 @@ do kompilacji programu wymagany jest program cmake, niestety nie wiem jak przygo
 
 #### labirynt 4x4
 
-![labirynt 4x4](MazeGenerator\pictures\4x4.png )
+![labirynt 4x4](https://github.com/kamkamkil/MazeGenerator/blob/master/pictures/4x4.png )
 
 #### labirynt 5x5
 
@@ -42,7 +42,7 @@ do kompilacji programu wymagany jest program cmake, niestety nie wiem jak przygo
 
 #### labirynt 20x25
 
-![labirynt 20x25](pictures\20x25.png )
+![labirynt 20x25](https://github.com/kamkamkil/MazeGenerator/blob/master/pictures/20x25.png )
 
 ### reprezentacjia ASCII
 
