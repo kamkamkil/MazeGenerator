@@ -72,8 +72,8 @@ private:
     std::vector<std::vector<Node>> data;
 
 public:
-    const int hight;
-    const int width;
+     int hight;
+     int width;
     MyTable(int hight, int width) : data(hight, std::vector<Node>(width, Node())), hight(hight), width(width){};
     Node &operator()(int y, int x) { return data[y][x]; }
     Node &operator()(std::pair<int, int> p) { return data[p.first][p.second]; }
