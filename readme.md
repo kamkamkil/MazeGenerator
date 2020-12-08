@@ -30,7 +30,7 @@ do kompilacji programu wymagany jest program cmake, niestety nie wiem jak przygo
 
 #### labirynt 4x4
 
-![labirynt 4x4](pictures\4x4.png )
+![labirynt 4x4](MazeGenerator\pictures\4x4.png )
 
 #### labirynt 5x5
 
