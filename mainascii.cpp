@@ -3,7 +3,7 @@
 
 int main(int argc, char const *argv[])
 {
-    auto maze = mazeGenerator(4, 4);
+    auto maze = mazeGenerator(10,10);
     drawMazeASCII(maze);
 
     return 0;

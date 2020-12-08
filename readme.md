@@ -24,10 +24,70 @@ do kompilacji programu wymagany jest program cmake, niestety nie wiem jak przygo
 
 `Node` jest to opis pojedynczego pola labiryntu, zawiera w sobie na jakie sąsiedzkie pole można wejść
 
-## przykładowe wygenerowane labirynty 
+## przykładowe wygenerowane labirynty
 
 ### graficzna reprezentacja
 
 #### labirynt 4x4
 
-[labirynt 4x4][pictures\5x5.png ]
+![labirynt 4x4](pictures\4x4.png )
+
+#### labirynt 5x5
+
+![labirynt 5x5](pictures\5x5.png )
+
+#### labirynt 10x15
+
+![labirynt 10x15](pictures\10x15.png )
+
+#### labirynt 20x25
+
+![labirynt 20x25](pictures\20x25.png )
+
+### reprezentacjia ASCII
+
+#### labirynt  4x4
+
+```bash
+xxxxxxxxx
+x   x x x
+x x x x x
+x x x   x
+x x xxx x
+x x   x x
+x xxx x x
+x   x   x
+xxxxxxxxx
+```
+
+#### labirynt  10x10
+
+```bash
+xxxxxxxxxxxxxxxxxxxxx
+x         x x     x x
+x xxxxxxx x x xxx x x
+x x     x   x x   x x
+x x xxx xxx xxx xxx x
+x   x   x x x   x   x
+xxxxx xxx x x xxx x x
+x   x x     x x   x x
+x x x x xxxxx x xxx x
+x x x x     x x   x x
+x x x x xxxxx xxxxx x
+x x   x x   x   x   x
+x xxxxxxx x xxx x xxx
+x         x   x x   x
+x xxxxxxxxxxx x x x x
+x   x       x   x x x
+xxx x x xxx xxxxxxx x
+x   x x x x     x   x
+x xxxxx x xxxxx x x x
+x       x         x x
+xxxxxxxxxxxxxxxxxxxxx
+```
+
+## aktualne limitacje
+
+- aktualnie za każdym razem generuje się ten sam labirynt
+
+- generowanie w trybie ASCII nie zawsze jest poprawne
