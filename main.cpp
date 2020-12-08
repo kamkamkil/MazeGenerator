@@ -4,7 +4,7 @@
 
 int main(int argc, char const *argv[])
 {
-    auto maze = mazeGenerator(20, 10);
+    auto maze = mazeGenerator(5, 5);
     drawMaze(maze);
     return 0;
 }
