@@ -52,6 +52,10 @@ cp build/SFML-2.5.1/lib/*.dll build
 
 `Node` jest to opis pojedynczego pola labiryntu, zawiera w sobie na jakie sąsiedzkie pole można wejść
 
+## opis interfejsu graficznego 
+
+po naciśnięciu lewego klawisza myszy wygeneruje się nowy labirynt
+
 ## przykładowe wygenerowane labirynty
 
 ### graficzna reprezentacja

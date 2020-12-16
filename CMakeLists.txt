@@ -21,7 +21,7 @@ add_executable(mainascii mainascii.cpp)
 target_link_libraries(mainascii drawMazeASII mazeGenerator)
 
 add_executable(main main.cpp )
-target_link_libraries(main mazeGenerator drawMaze)
+target_link_libraries(main sfml-graphics mazeGenerator drawMaze)
 
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
