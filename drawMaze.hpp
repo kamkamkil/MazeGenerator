@@ -2,10 +2,10 @@
 #include <SFML/Graphics.hpp>
 #include "mazeGenerator.hpp"
 
-void drawMaze( sf::RenderWindow &window,MyTable table,int window_w = 1280, int window_h = 720,float wall_s = 0.2)
+void drawMaze(sf::RenderWindow &window, MyTable table, int window_w = 1280, int window_h = 720, float wall_s = 0.2)
 {
     const float wall = wall_s;
-    const float block = (window_w < window_h ? window_w : window_h) * 0.80 / table.hight;//@FIXME nie jest to najlepszy sposób na determinacjie wielkości pola ze wzglęgu na wielkość okna 
+    const float block = (window_w < window_h ? window_w : window_h) * 0.80 / table.hight; //@FIXME nie jest to najlepszy sposób na determinacjie wielkości pola ze wzglęgu na wielkość okna
 
     for (int a = 0; a <= table.hight; a++)
     {
@@ -47,4 +47,13 @@ void drawMaze( sf::RenderWindow &window,MyTable table,int window_w = 1280, int w
             };
         }
     }
+}
+
+void drawBlock(sf::RenderWindow &window, int x, int y, int block, float wall)
+{
+    x = (block * wall) * (1 + x / wall + x);
+    y = (block * wall) * (1 + y / wall + y);
+    sf::RectangleShape rectangle(sf::Vector2f(block, block));
+    rectangle.setPosition(x, y);
+    window.draw(rectangle);
 }
