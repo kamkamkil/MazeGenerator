@@ -32,6 +32,12 @@ cmake ..
 
 teraz mamy już wygenerowany naż makefile, wystarczy wpisać make i nasz program zostanie skompilowany, pliki wykonywalne będą znajdować się w folderze build. Jako że sami budujemy bibliotekę sfml nie powinno być konieczności doinstalowywania dodatkowych pakietów
 
+po skompilowaniu należy jeszcze skopiować pliki dll do pliku w którym znajdują się pliki wykonywalne
+
+```
+cp build/SFML-2.5.1/lib/*.dll build 
+```
+
 ## opis funkcji
 
 `MyTable mazeGenerator(int hight, int width)`  generuje labirynt w obiekcie `MyTable`
