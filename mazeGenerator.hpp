@@ -7,6 +7,7 @@
 #include <random>
 #include <iostream>
 #include <iterator>
+#include <ctime>    
 
 //stolen from : https://gist.github.com/cbsmith/5538174
 
@@ -14,7 +15,7 @@ template <typename RandomGenerator = std::default_random_engine>
 struct random_selector
 {
     //On most platforms, you probably want to use std::random_device("/dev/urandom")()
-    random_selector(RandomGenerator g = RandomGenerator(std::random_device()()))
+    random_selector(RandomGenerator g = RandomGenerator(std::time(0)))
         : gen(g) {}
 
     template <typename Iter>
@@ -103,13 +104,14 @@ MyTable mazeGenerator(int hight, int width)
     MyTable maze(hight, width);
     std::stack<std::pair<int, int>> stack;
     std::unordered_set<std::pair<int, int>, pair_hash> set;
-    std::random_device r;
-    std::default_random_engine e1(r());
+
+    std::random_device r{};
+    std::default_random_engine e1{std::time(0)}; //nie wiem dlaczego ale r{} w miejscu time też powiino dać losowy seed ale tak się nie dzieje info na temat nowoczesnego podejscia do pseudo losowych liczb w c++ https://isocpp.org/files/papers/n3551.pdf
     std::uniform_int_distribution<int> uniform_dist_hight(0, hight - 1);
     std::uniform_int_distribution<int> uniform_dist_width(0, width - 1);
+
     random_selector<> selector;
     stack.push({uniform_dist_hight(e1), uniform_dist_width(e1)});
-    std::cout << stack.top().first<<" "<< stack.top().second << std::endl;
     set.insert(stack.top());
     while (!stack.empty())
     {
