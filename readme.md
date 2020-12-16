@@ -56,7 +56,7 @@ cp build/SFML-2.5.1/lib/*.dll build
 
 ### ustawienie wielkości generowanego okna
 
-w celu zmiany wielkości generowanego okna należy zmienić poniższe stałe (domyślnie są one ustawione na full HD)
+w celu zmiany wielkości generowanego okna należy zmienić poniższe stałe (domyślnie są one ustawione na full HD) zmiana wielkość okna jest jeszcze eksperymentalna 
 
 ```c++
     const int window_w = 1920;
