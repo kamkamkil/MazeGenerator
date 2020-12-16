@@ -109,6 +109,7 @@ MyTable mazeGenerator(int hight, int width)
     std::uniform_int_distribution<int> uniform_dist_width(0, width - 1);
     random_selector<> selector;
     stack.push({uniform_dist_hight(e1), uniform_dist_width(e1)});
+    std::cout << stack.top().first<<" "<< stack.top().second << std::endl;
     set.insert(stack.top());
     while (!stack.empty())
     {
