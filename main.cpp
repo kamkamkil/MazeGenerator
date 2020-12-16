@@ -4,16 +4,21 @@
 
 int main(int argc, char const *argv[])
 {
-    auto maze = mazeGenerator(20, 25);
+    const int window_w = 1920;
+    const int window_h = 1080;
+    const int maze_h = 10;
+    const int maze_w = 10;
 
-    sf::RenderWindow window(sf::VideoMode(1000, 1000), "My window");
+    auto maze = mazeGenerator(maze_h, maze_w);
+
+    sf::RenderWindow window(sf::VideoMode(window_w, window_h), "My window");
 
     while (window.isOpen())
     {
 
         if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
         {
-            maze = mazeGenerator(20, 25);
+            maze = mazeGenerator(maze_h, maze_w);
         }
 
         sf::Event event;
@@ -24,8 +29,20 @@ int main(int argc, char const *argv[])
         }
 
         window.clear();
-
-        drawMaze(window, maze);
+        drawMaze(window, maze, window_w, window_h);
+        {
+            sf::Font font;
+            if (!font.loadFromFile("../fonts/Lato-Black.ttf"))
+            {
+            }
+            sf::Text text;
+            text.setFont(font);
+            text.setString("wygeneruj nowy labirynt");
+            text.setCharacterSize(24);
+            text.setFillColor(sf::Color::Red);
+            text.setPosition(1200,100);
+            window.draw(text);
+        }
 
         window.display();
     }
