@@ -56,14 +56,18 @@ cp build/SFML-2.5.1/lib/*.dll build
 
 ### ustawienie wielkości generowanego okna
 
-w celu zmiany wielkości generowanego okna należy zmienić poniższe stałe (domyślnie są one ustawione na full HD) zmiana wielkość okna jest jeszcze eksperymentalna 
+w celu zmiany wielkości generowanego okna należy zmienić poniższe stałe (domyślnie są one ustawione na full HD) zmiana wielkość okna jest jeszcze eksperymentalna
 
 ```c++
     const int window_w = 1920;
     const int window_h = 1080;
 ```
 
-po naciśnięciu lewego klawisza myszy wygeneruje się nowy labirynt
+### menu
+
+kliknięcie w "wygeneruj nowy labirynt" wygeneruje nowy labirynt  
+
+kliknięcie w "zmien rozmiar labiryntu" pozwoli zmienić wielkość labiryntu
 
 ## przykładowe wygenerowane labirynty
 
