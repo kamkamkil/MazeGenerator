@@ -6,9 +6,31 @@ program służy do generowania labiryntów metodą "Recursive backtracker" oraz 
 
 ## instalacja
 
-UWAGA KOMPILATOR MSVC NIE JEST WSPIERANY
+do kompilacji programu wymagany jest program cmake,aby zainstalować make należy wpisać:
 
-do kompilacji programu wymagany jest program cmake, niestety nie wiem jak przygotować odpowiedniego makefile. W celu kompilacji programu należy wejść do pliku build, następnie dzięki komendzie cmake .. wygeneruje nam się plik konfiguracyjny naszego kompilatora (na przykład make). Na linuxsie możliwe że trzeba doinstalować dodatkowe pakiety ([więcej](https://www.sfml-dev.org/tutorials/2.5/compile-with-cmake.php)).
+```bash
+sudo apt  install cmake
+```
+
+następnie należy utworzyć folder build:
+
+```bash
+mkdir build
+```
+
+następnie wchodzimy do pliku build
+
+```bash
+cd build
+```
+
+teraz za pomocą cmake przygotowujemy konfigurację naszego projektu, cmake powinien znaleźć nasz kompilator i przygotować nam makefile
+
+```bash
+cmake ..
+```
+
+teraz mamy już wygenerowany naż makefile, wystarczy wpisać make i nasz program zostanie skompilowany, pliki wykonywalne będą znajdować się w folderze build. Jako że sami budujemy bibliotekę sfml nie powinno być konieczności doinstalowywania dodatkowych pakietów
 
 ## opis funkcji
 
