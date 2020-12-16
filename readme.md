@@ -34,7 +34,7 @@ teraz mamy już wygenerowany naż makefile, wystarczy wpisać make i nasz progra
 
 po skompilowaniu w celu uruchomienia main, należy jeszcze skopiować pliki dll do pliku w którym znajdują się pliki wykonywalne
 
-```
+```bash
 cp build/SFML-2.5.1/lib/*.dll build 
 ```
 
@@ -115,6 +115,5 @@ xxxxxxxxxxxxxxxxxxxxx
 ```
 
 ## aktualne limitacje
-
 
 - generowanie w trybie ASCII nie zawsze jest poprawne
