@@ -3,16 +3,13 @@
 #include <SFML/Graphics.hpp>
 #include <string>
 #include <cmath>
+#include "dijkstra.hpp"
 
 enum menu_state
 {
     normal,
     size
 };
-
-void menu(sf::RenderWindow &window, menu_state menu)
-{
-}
 
 int main(int argc, char const *argv[])
 {
@@ -21,8 +18,8 @@ int main(int argc, char const *argv[])
 
     const int window_w = 1920;
     const int window_h = 1080;
-    int maze_h = 10;
-    int maze_w = 10;
+    int maze_h = 4;
+    int maze_w = 4;
 
     auto maze = mazeGenerator(maze_h, maze_w);
 
@@ -146,6 +143,7 @@ int main(int argc, char const *argv[])
                 window.draw(text);
                 break;
             }
+
             window.display();
         }
     }

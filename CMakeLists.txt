@@ -25,7 +25,7 @@ add_executable(mainascii mainascii.cpp)
 target_link_libraries(mainascii Dijkstra  drawMazeASII mazeGenerator) #pamiętać usunąć tą bibliotekę
 
 add_executable(main main.cpp )
-target_link_libraries(main sfml-graphics mazeGenerator drawMaze)
+target_link_libraries(main sfml-graphics Dijkstra mazeGenerator drawMaze)
 
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})

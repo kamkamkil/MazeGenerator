@@ -1,46 +1,114 @@
-#pragma once 
+#pragma once
 #include <vector>
 #include <utility>
 #include <unordered_set>
+#include <set>
 #include <climits>
 #include <algorithm>
 #include "mazeGenerator.hpp"
+//@TODO zmienić tak aby z tablic odczytywać za pomocą par i funkcji lambda
 /**
- * @brief 
+ * @brief funkcja wykonuje algorytm dijkstry na labiryncie 
  * 
- * @param start 
- * @param end 
- * @param table 
- * @return std::pair<std::vector<std::pair<int,int>>,std::vector<std::pair<int,int>>> 
+ * @param start pole startowe 
+ * @param end pole końcowe 
+ * @param table labirynt 
+ * @return std::pair<std::vector<std::pair<int,int>>,std::vector<std::pair<int,int>>> pierwszy wektor to najkrótsza droga, drugi to kolejność przeszukiwania  
  */
-std::pair<std::vector<std::pair<int,int>>,std::vector<std::pair<int,int>>> dijkstra(std::pair<int, int> start,std::pair<int, int> end,MyTable table)
+std::pair<std::vector<std::pair<int, int>>, std::vector<std::pair<int, int>>> dijkstra(std::pair<int, int> start, std::pair<int, int> end, MyTable table)
 {
-    struct Node_info //@FIXME zmiana nazwy 
+    std::vector<std::pair<int, int>> visited;
+    std::set<std::pair<int, int>> unVisited;
+    std::vector<std::vector<int>> dys(table.hight, std::vector<int>(table.width, INT_MAX));
+    std::vector<std::vector<std::pair<int, int>>> prec(table.hight, std::vector<std::pair<int, int>>(table.width, std::pair<int, int>(-1, -1)));
+    for (int y = 0; y < table.hight; y++)
+        for (int x = 0; x < table.width; x++)
+            unVisited.insert(std::pair<int, int>(y, x));
+    dys[start.first][start.second] = 0;
+    while (!unVisited.empty())
     {
-        Node_info(std::pair<int,int> position_,std::pair<int,int> predecessor_,int dis_) : position(position_), predecessor(predecessor_), dis(dis_){};
-        Node_info(std::pair<int,int> position_,std::pair<int,int> predecessor_) : position(position_), predecessor(predecessor_), dis(INT_MAX){};
-        Node_info(std::pair<int,int> position_) : position(position_), predecessor(position_), dis(INT_MAX){};
-        Node_info(std::pair<int,int> position_,int dis_) : position(position_), predecessor(position_), dis(dis_){};
-        const std::pair<int,int> position;
-        std::pair<int,int> predecessor;
-        int dis;
-    };
-    std::vector<Node_info> unvisited;
-    for (int x = 0; x < table.width; x++)
-    {
-        for (int y = 0; y < table.hight; y++)
+        int smallestDis = INT_MAX;
+        std::pair<int, int> smallestDisPair;
+        for (auto it : unVisited)
         {
-            if(start == std::pair<int,int>(y,x))
-                continue;
-            unvisited.push_back(Node_info({y,x}));
+            if (dys[it.first][it.second] < smallestDis)
+            {
+                smallestDis = dys[it.first][it.second];
+                smallestDisPair = it;
+            }
         }
-    }
-    std::vector<Node_info> visited;
-    visited.push_back(Node_info(start,0));
-    auto node = start;
-    if (table(node).up)
-    {
-        auto new_node = std::find_if(visited.begin(),visited.end(),[node](Node_info n){n.position == std::pair<int,int>(node.first - 1,node.second);});
-        if()
+        if (table(smallestDisPair).up)
+        {
+            if (unVisited.find({smallestDisPair.first - 1, smallestDisPair.second}) != unVisited.end())
+            {
+                if (dys[smallestDisPair.first - 1][smallestDisPair.second] > dys[smallestDisPair.first][smallestDisPair.second] + 1)
+                {
+                    dys[smallestDisPair.first - 1][smallestDisPair.second] = dys[smallestDisPair.first][smallestDisPair.second] + 1;
+                    prec[smallestDisPair.first - 1][smallestDisPair.second] = smallestDisPair;
+                }
+            }
+        }
+        if (table(smallestDisPair).down)
+        {
+            if (unVisited.find({smallestDisPair.first + 1, smallestDisPair.second}) != unVisited.end())
+            {
+                if (dys[smallestDisPair.first + 1][smallestDisPair.second] > dys[smallestDisPair.first][smallestDisPair.second] + 1)
+                {
+                    dys[smallestDisPair.first + 1][smallestDisPair.second] = dys[smallestDisPair.first][smallestDisPair.second] + 1;
+                    prec[smallestDisPair.first + 1][smallestDisPair.second] = smallestDisPair;
+                }
+            }
+        }
+        if (table(smallestDisPair).right)
+        {
+            if (unVisited.find({smallestDisPair.first , smallestDisPair.second+ 1}) != unVisited.end())
+            {
+                if (dys[smallestDisPair.first][smallestDisPair.second + 1] > dys[smallestDisPair.first][smallestDisPair.second] + 1)
+                {
+                    dys[smallestDisPair.first][smallestDisPair.second + 1] = dys[smallestDisPair.first][smallestDisPair.second] + 1;
+                    prec[smallestDisPair.first][smallestDisPair.second + 1] = smallestDisPair;
+                }
+            }
+        }
+        if (table(smallestDisPair).left)
+        {
+            if (unVisited.find({smallestDisPair.first , smallestDisPair.second- 1}) != unVisited.end())
+            {
+                if (dys[smallestDisPair.first][smallestDisPair.second - 1] > dys[smallestDisPair.first][smallestDisPair.second] + 1)
+                {
+                    dys[smallestDisPair.first][smallestDisPair.second - 1] = dys[smallestDisPair.first][smallestDisPair.second] + 1;
+                    prec[smallestDisPair.first][smallestDisPair.second - 1] = smallestDisPair;
+                }
+            }
+        }
+        unVisited.erase(smallestDisPair);
+        visited.push_back(smallestDisPair); // @FIXME to chyba nie jest potrzebne albo można zamienić na vector i zrobić jako result od razu
+        // std::cout << "================================" << std::endl;
+        // std::cout << "para: " << smallestDisPair.first << " " << smallestDisPair.second << std::endl;
+        // std::cout << "rozmiar unvisited " << unVisited.size() << std::endl;
+        // std::cout << "rozmiar visited " << visited.size() << std::endl;
+        // std::cout << "odleglosc" << std::endl;
+        // for (int y = 0; y < table.hight; y++)
+        // {
+        //     for (int x = 0; x < table.width; x++)
+        //     {
+        //         std::cout << " y " << y << " x " << x << "     " << dys[y][x] << std::endl;
+        //     }
+        // }
+        // std::cout << "poprzedniki" << std::endl;
+        // for (int y = 0; y < table.hight; y++)
+        // {
+        //     for (int x = 0; x < table.width; x++)
+        //     {
+        //         std::cout << " y " << y << " x " << x << "     " << prec[y][x].first << "   " << prec[y][x].second << std::endl;
+        //     }
+        // }
+        // std::cout << "unvisited" << std::endl;
+        // for (auto it = unVisited.begin(); it != unVisited.end(); it++)
+        // {
+        //     std::cout << "( " << (*it).first << ", " << (*it).second << ")   ";
+        // }
+        // std::cout << std::endl;
+        // std::cout << "================================" << std::endl;
     }
 }
