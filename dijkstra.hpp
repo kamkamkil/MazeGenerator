@@ -20,10 +20,10 @@ std::pair<std::vector<std::pair<int, int>>, std::vector<std::pair<int, int>>> di
     std::vector<std::pair<int, int>> visited;
     std::set<std::pair<int, int>> unVisited;
     std::vector<std::vector<int>> dys(table.hight, std::vector<int>(table.width, INT_MAX));
-    std::vector<std::vector<std::pair<int, int>>> prec(table.hight, std::vector<std::pair<int, int>>(table.width, std::pair<int, int>(-1, -1)));
+    std::vector<std::vector<std::pair<int, int>>> prec(table.hight, std::vector<std::pair<int, int>>(table.width, {-1, -1}));
     for (int y = 0; y < table.hight; y++)
         for (int x = 0; x < table.width; x++)
-            unVisited.insert(std::pair<int, int>(y, x));
+            unVisited.insert({y, x});
     dys[start.first][start.second] = 0;
     while (!unVisited.empty())
     {
@@ -82,33 +82,15 @@ std::pair<std::vector<std::pair<int, int>>, std::vector<std::pair<int, int>>> di
             }
         }
         unVisited.erase(smallestDisPair);
-        visited.push_back(smallestDisPair); // @FIXME to chyba nie jest potrzebne albo można zamienić na vector i zrobić jako result od razu
-        // std::cout << "================================" << std::endl;
-        // std::cout << "para: " << smallestDisPair.first << " " << smallestDisPair.second << std::endl;
-        // std::cout << "rozmiar unvisited " << unVisited.size() << std::endl;
-        // std::cout << "rozmiar visited " << visited.size() << std::endl;
-        // std::cout << "odleglosc" << std::endl;
-        // for (int y = 0; y < table.hight; y++)
-        // {
-        //     for (int x = 0; x < table.width; x++)
-        //     {
-        //         std::cout << " y " << y << " x " << x << "     " << dys[y][x] << std::endl;
-        //     }
-        // }
-        // std::cout << "poprzedniki" << std::endl;
-        // for (int y = 0; y < table.hight; y++)
-        // {
-        //     for (int x = 0; x < table.width; x++)
-        //     {
-        //         std::cout << " y " << y << " x " << x << "     " << prec[y][x].first << "   " << prec[y][x].second << std::endl;
-        //     }
-        // }
-        // std::cout << "unvisited" << std::endl;
-        // for (auto it = unVisited.begin(); it != unVisited.end(); it++)
-        // {
-        //     std::cout << "( " << (*it).first << ", " << (*it).second << ")   ";
-        // }
-        // std::cout << std::endl;
-        // std::cout << "================================" << std::endl;
+        visited.push_back(smallestDisPair); 
     }
+        std::vector<std::pair<int,int>> path;
+        auto temp = end;
+        while (temp != start)
+        {
+            path.push_back(temp);
+            temp = prec[temp.first][temp.second];
+        }
+        path.push_back(start);
+        return {path,visited};
 }

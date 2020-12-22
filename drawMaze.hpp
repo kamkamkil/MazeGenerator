@@ -55,5 +55,6 @@ void drawBlock(sf::RenderWindow &window, int x, int y, int block, float wall)
     y = (block * wall) * (1 + y / wall + y);
     sf::RectangleShape rectangle(sf::Vector2f(block, block));
     rectangle.setPosition(x, y);
+    rectangle.setFillColor(sf::Color(100, 250, 50));
     window.draw(rectangle);
 }
