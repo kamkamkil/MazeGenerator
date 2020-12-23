@@ -66,7 +66,10 @@ struct Node
     bool right;
     bool left;
 };
-
+/**
+ * @brief klasa przechowująca macierz labiryntu 
+ * 
+ */
 class MyTable
 {
 private:
@@ -98,7 +101,13 @@ public:
         }
     }
 };
-
+/**
+ * @brief generuje labirynt
+ * 
+ * @param hight wysokość labiryntu 
+ * @param width szerokość labiryntu
+ * @return MyTable labirynt 
+ */
 MyTable mazeGenerator(int hight, int width)
 {
     MyTable maze(hight, width);
@@ -116,7 +125,6 @@ MyTable mazeGenerator(int hight, int width)
     while (!stack.empty())
     {
         auto c_node = stack.top();
-        //@TODO przenieść to może do innej funkcji czy coś takiego bo nie wygląda to za dobrze w tej pentli
         std::vector<std::pair<int, int>> v; //@TODO zmiana nazwy
         if (c_node.first > 0 && set.find({c_node.first - 1, c_node.second}) == set.end())
             v.push_back({c_node.first - 1, c_node.second});

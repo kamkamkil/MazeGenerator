@@ -134,3 +134,6 @@ xxxxxxxxxxxxxxxxxxxxx
 ## aktualne limitacje
 
 - generowanie w trybie ASCII nie zawsze jest poprawne
+- niektóre wielkości labiryntu generują się na menu tekstowym
+
+## gałąź ekperymentalna 

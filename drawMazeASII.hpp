@@ -1,7 +1,11 @@
 #pragma once
 #include <iostream>
 #include "mazeGenerator.hpp"
-
+/**
+ * @brief wypisuje labirynt w postaci ascii 
+ * 
+ * @param table labirynt 
+ */
 void drawMazeASCII(MyTable table)
 {
     bool drawResult[table.hight * 2 + 1][table.width * 2 + 1];

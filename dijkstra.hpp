@@ -6,7 +6,6 @@
 #include <climits>
 #include <algorithm>
 #include "mazeGenerator.hpp"
-//@TODO zmienić tak aby z tablic odczytywać za pomocą par i funkcji lambda
 /**
  * @brief funkcja wykonuje algorytm dijkstry na labiryncie 
  * 
