@@ -134,3 +134,10 @@ xxxxxxxxxxxxxxxxxxxxx
 ## aktualne limitacje
 
 - generowanie w trybie ASCII nie zawsze jest poprawne
+- kiedy labirynt jest szery niż wysoki generuje się na menu tekstowy
+
+## gałąź eksperymentalna
+
+- znajduje się tam algorytm dijktry - jego  rysowanie w gui nie działa jeszcze poprawnie
+
+- trochę lepsza dokumenatajca
