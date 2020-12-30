@@ -134,6 +134,7 @@ xxxxxxxxxxxxxxxxxxxxx
 ## aktualne limitacje
 
 - generowanie w trybie ASCII nie zawsze jest poprawne
+<<<<<<< HEAD
 - kiedy labirynt jest szery niż wysoki generuje się na menu tekstowy
 
 ## gałąź eksperymentalna
@@ -141,3 +142,8 @@ xxxxxxxxxxxxxxxxxxxxx
 - znajduje się tam algorytm dijktry - jego  rysowanie w gui nie działa jeszcze poprawnie
 
 - trochę lepsza dokumenatajca
+=======
+- niektóre wielkości labiryntu generują się na menu tekstowym
+
+## gałąź ekperymentalna 
+>>>>>>> experimantal

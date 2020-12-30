@@ -1,7 +1,15 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "mazeGenerator.hpp"
-
+/**
+ * @brief rysuje labirynt za pomocą sfml 
+ * 
+ * @param window okno w jakim rysujemy
+ * @param table labirynt
+ * @param window_w wysokość okna 
+ * @param window_h szerokość okna 
+ * @param wall_s grubość sciany określona jako ułamek wielkości bloku 
+ */
 void drawMaze(sf::RenderWindow &window, MyTable table, int window_w = 1280, int window_h = 720, float wall_s = 0.2)
 {
     const float wall = wall_s;
@@ -48,12 +56,21 @@ void drawMaze(sf::RenderWindow &window, MyTable table, int window_w = 1280, int 
         }
     }
 }
-
+/**
+ * @brief rysuje blok we-w labiryntu 
+ * 
+ * @param window okno w jakim rysujemy
+ * @param x współrzędna x bloku  
+ * @param y współrzędna y bloku 
+ * @param block wielkość bloku 
+ * @param wall grubość sciany określona jako ułamek wielkości bloku 
+ */
 void drawBlock(sf::RenderWindow &window, int x, int y, int block, float wall)
 {
     x = (block * wall) * (1 + x / wall + x);
     y = (block * wall) * (1 + y / wall + y);
     sf::RectangleShape rectangle(sf::Vector2f(block, block));
     rectangle.setPosition(x, y);
+    rectangle.setFillColor(sf::Color(100, 250, 50));
     window.draw(rectangle);
 }
