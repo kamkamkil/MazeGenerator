@@ -52,6 +52,20 @@ cp build/SFML-2.5.1/lib/*.dll build
 
 `Node` jest to opis pojedynczego pola labiryntu, zawiera w sobie na jakie sąsiedzkie pole można wejść
 
+## opis algorytmu
+
+generowanie labiryntu metodą "Recursive backtracker" można uznać za metodę bardzo podobną do znajdowania drzewa rozpinającego grafu.
+
+1. Na stosie kładziemy losowo znaleziony node labiryntu
+
+2. Bierzemy noda z szczytu stosu
+
+3. wkładamy wylosowany noda do zbioru odwiedzonych
+
+4. następnie wybieramy losowego sąsiada wybranego noda i kładziemy go na stos
+
+5. powtarzamy kroki 2 - 4 aż stos się opóźni
+
 ## opis interfejsu graficznego
 
 ### ustawienie wielkości generowanego okna
@@ -68,6 +82,8 @@ w celu zmiany wielkości generowanego okna należy zmienić poniższe stałe (do
 kliknięcie w "wygeneruj nowy labirynt" wygeneruje nowy labirynt  
 
 kliknięcie w "zmien rozmiar labiryntu" pozwoli zmienić wielkość labiryntu
+
+kliknięcie w "najdz najkrotsza droge metoda dijkstry" umożliwi nam rozwiązanie labiryntu, zostaniemy poproszeni o wybranie pola startowego i końcowego (uwaga dla dużych labiryntów trasa nie rysuje się poprawnie)
 
 ## przykładowe wygenerowane labirynty
 
@@ -134,16 +150,4 @@ xxxxxxxxxxxxxxxxxxxxx
 ## aktualne limitacje
 
 - generowanie w trybie ASCII nie zawsze jest poprawne
-<<<<<<< HEAD
 - kiedy labirynt jest szery niż wysoki generuje się na menu tekstowy
-
-## gałąź eksperymentalna
-
-- znajduje się tam algorytm dijktry - jego  rysowanie w gui nie działa jeszcze poprawnie
-
-- trochę lepsza dokumenatajca
-=======
-- niektóre wielkości labiryntu generują się na menu tekstowym
-
-## gałąź ekperymentalna 
->>>>>>> experimantal
